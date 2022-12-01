@@ -6,6 +6,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Inicio de sesión administrador</title>
+    <style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    </style>
 </head>
 
 <body>
@@ -25,7 +40,7 @@
                     </div>
                     <div class="form-group">
                         <label class="custom-control custom-checkbox">
-                            <input class="custom-control-input" type="checkbox"><span class="custom-control-label">Remember Me</span>
+                            <input class="custom-control-input" type="checkbox"><span class="custom-control-label">Recordar contraseña</span>
                         </label>
                     </div>
                     <button type="submit" class="btn btn-primary btn-lg btn-block">Iniciar sesión</button>
@@ -43,10 +58,6 @@
   
     <!-- ============================================================== -->
     <!-- end login page  -->
-    <!-- ============================================================== -->
-    <!-- Optional JavaScript -->
-    <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
-    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
  
 </html>

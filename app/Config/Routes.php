@@ -43,6 +43,7 @@ $routes->set404Override();
 
 //esta ruta es del login principal
 $routes->get('/', 'User::Loginadmin');
+$routes->get('/ListaClientes', 'User::ListaClientes');
 
 $routes->get('/principal', 'User::principal');
 /*

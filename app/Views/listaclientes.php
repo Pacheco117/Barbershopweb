@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Principal</title>
+    <title>Listado de clientes</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
         <!-- ============================================================== -->
          <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                <a class="navbar-brand" href="routeto">Barbershop</a>
+                <a class="navbar-brand" href="<?php echo base_url(); ?>/principal">Barbershop</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -68,7 +68,7 @@ Administrador</h5>
                                 Menú
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Clientes <span class="badge badge-success">6</span></a>
+                                <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fas fa-address-book"></i>Clientes <span class="badge badge-success">6</span></a>
                                 <div id="submenu-1" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
@@ -83,38 +83,19 @@ Administrador</h5>
                                     </ul>
                                 </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Usuarios</a>
-                                <div id="submenu-2" class="collapse submenu" style="">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="<?php echo base_url(); ?>/UsuariosList">Lista de Usuarios <span class="badge badge-secondary">New</span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="<?php echo base_url(); ?>/Agregarusuario">Agregar Usuarios</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="<?php echo base_url(); ?>/Modificarusuario">Modificar Usuarios</a>
-                                        </li>
-                                       
-                                        
-                                    
-                                       
-                                    </ul>
-                                </div>
-                            </li>
+
                             <li class="nav-item ">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fab fa-fw fa-wpforms"></i>Citas</a>
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fas fa-calendar-alt"></i>Citas</a>
                                 <div id="submenu-4" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="cards.html">Lista de Citas <span class="badge badge-secondary">New</span></a>
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/Citas">Lista de Citas <span class="badge badge-secondary">New</span></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="general.html">Agregar Citas</a>
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/AgregarCitas">Agregar Citas</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="carousel.html">Modificar Citas</a>
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/Modificar">Modificar Citas</a>
                                         </li>
                                        
                                         
@@ -123,22 +104,37 @@ Administrador</h5>
                                     </ul>
                                 </div>
                             </li>
-
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-fw fa-chart-pie"></i>Precios</a>
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fas fa-cut"></i>Cortes</a>
+                                <div id="submenu-2" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/Cortes">Lista cortes <span class="badge badge-secondary">New</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/AgregarCorte">Agregar Cortes</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/ModificarCorte">Modificar Cortes</a>
+                                        </li>
+                                       
+                                        
+                                    
+                                       
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-dollar-sign"></i>Precios</a>
                                 <div id="submenu-3" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
                                             <a class="nav-link" href="chart-c3.html">Lista de precios</a>
                                         </li>
-                                
                                         <li class="nav-item">
                                             <a class="nav-link" href="chart-chartist.html">Modificar Precios</a>
                                         </li>
-                                        
-                                        
-                                       
-                                       
+               
                                     </ul>
                                 </div>
                             </li>
@@ -164,45 +160,76 @@ Administrador</h5>
 		
         <div class="dashboard-wrapper">
             <div class="container-fluid dashboard-content">
-                <div class="row">
+            <div class="row">
+                    <!-- ============================================================== -->
+                    <!-- basic table  -->
+                    <!-- ============================================================== -->
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <h3 class="text-center">Agregar Clientes</h3>
-                    </div>
-                </div>
-                <div class="card-body border-top">
-                    <h3>Formulario para clientes</h3>
-                    <form action="/registrarcita">
-                        <div class="form-group">
+                        <div class="card">
+                            <h5 class="card-header">Lista de clientes</h5>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered first">
+                                        <thead>
+                                            <tr>
+                                                <th>Telefono</th>
+                                                <th>Nombre</th>
+                                                <th>Apellido Paterno</th>
+                                                <th>Apellido Materno</th>
+                                                <th>Servicio</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>9992786530</td>
+                                                <td>Juan</td>
+                                                <td>Perez</td>
+                                                <td>Hernandez</td>
+                                                <td>Corte de bigote</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>9993468374</td>
+                                                <td>Pedro</td>
+                                                <td>Avila</td>
+                                                <td>Gonzales</td>
+                                                <td>Corte militar</td>
+                                                
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
 
-                            <label for="inputEmail">Telefono</label>
-                            <input id="inputEmail" type="tel" placeholder="Telefono" class="form-control">
-                            <label for="inputEmail">Nombre</label>
-                            <input id="inputEmail" type="text" placeholder="Nombre" class="form-control">
-                            <label for="inputEmail">Apellido paterno</label>
-                            <input id="inputEmail" type="text" placeholder="Apellido paterno" class="form-control">
-                            <label for="inputEmail">Apellido materno</label>
-                            <input id="inputEmail" type="text" placeholder="Apellido materno" class="form-control">
-
-                            <label for="inputEmail">Fecha</label>
-                            <input id="inputEmail" type="date" placeholder="Apellido materno" class="form-control">
-                            <br>
-
-                            <a  class="btn btn-primary">registrar cita</a>
-
-    
+                                                <th>Telefono</th>
+                                                <th>Nombre</th>
+                                                <th>Apellido Paterno</th>
+                                                <th>Apellido Materno</th>
+                                                <th>Servicio</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- end basic table  -->
+                    <!-- ============================================================== -->
+                </div
+                
                         
 
                         
                                 
-<!-- -->
+
                             
                                 
             </div>
   
     <!-- ============================================================== -->
     <!-- end login page  -->
-    <!-- =============================================================
+    <!-- ============================================================== -->
+    
 </body>
  
 </html>

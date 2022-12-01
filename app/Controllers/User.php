@@ -21,7 +21,10 @@ class User extends BaseController
     {
         $this->_loadDefaultView([],'principal');
     }
-
+    public function ListaClientes()
+    {
+        $this->_loadDefaultView([],'listaclientes');
+    }
     public function _loadDefaultView($data,$view)
     {
         echo view ("LoginTemplate");
