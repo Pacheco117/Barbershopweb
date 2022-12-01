@@ -40,7 +40,11 @@ $routes->set404Override();
 //$routes->get('/eliminar', 'Home::delete');
 //$routes->post('/actualizar', 'Home::update');
 //$routes->get('/editar', 'Home::edit');
+
+//esta ruta es del login principal
 $routes->get('/', 'User::Loginadmin');
+
+$routes->get('/principal', 'User::principal');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -17,6 +17,10 @@ class User extends BaseController
         $this->_loadDefaultView([],'Loginuser');
 
     }
+    public function Principal()
+    {
+        $this->_loadDefaultView([],'principal');
+    }
 
     public function _loadDefaultView($data,$view)
     {
