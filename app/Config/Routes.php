@@ -46,6 +46,7 @@ $routes->get('/', 'User::Loginadmin');
 $routes->get('/ListaClientes', 'User::ListaClientes');
 
 $routes->get('/principal', 'User::principal');
+$routes->get('/AgregarClientes', 'User::AgregarClientes');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

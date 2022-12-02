@@ -21,7 +21,7 @@
         <!-- ============================================================== -->
          <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                <a class="navbar-brand" href="routeto">Barbershop</a>
+                <a class="navbar-brand" href="../index.html">Barbershop</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -55,7 +55,7 @@ Administrador</h5>
         <!-- ============================================================== -->
         <!-- left sidebar -->
         <!-- ============================================================== -->
-      <div class="nav-left-sidebar sidebar-dark">
+        <div class="nav-left-sidebar sidebar-dark">
             <div class="menu-list">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
@@ -68,77 +68,73 @@ Administrador</h5>
                                 Menú
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Clientes <span class="badge badge-success">6</span></a>
+                                <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fas fa-address-book"></i>Clientes <span class="badge badge-success">6</span></a>
                                 <div id="submenu-1" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="<?php echo base_url(); ?>/Clienteslista">Lista de Clientes</a>
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/ListaClientes">Lista de Clientes</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="<?php echo base_url(); ?>/#">Agregar Clientes</a>
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/AgregarClientes">Agregar Clientes</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="<?php echo base_url(); ?>/#">Modificar Clientes</a>
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/ModificarClientes">Modificar Clientes</a>
                                         </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Usuarios</a>
-                                <div id="submenu-2" class="collapse submenu" style="">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="<?php echo base_url(); ?>/UsuariosList">Lista de Usuarios <span class="badge badge-secondary">New</span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="<?php echo base_url(); ?>/Agregarusuario">Agregar Usuarios</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="<?php echo base_url(); ?>/Modificarusuario">Modificar Usuarios</a>
-                                        </li>
-                                       
-                                        
-                                    
-                                       
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fab fa-fw fa-wpforms"></i>Citas</a>
-                                <div id="submenu-4" class="collapse submenu" style="">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="cards.html">Lista de Citas <span class="badge badge-secondary">New</span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="general.html">Agregar Citas</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="carousel.html">Modificar Citas</a>
-                                        </li>
-                                       
-                                        
-                                    
-                                       
                                     </ul>
                                 </div>
                             </li>
 
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fas fa-calendar-alt"></i>Citas</a>
+                                <div id="submenu-4" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/Citas">Lista de Citas <span class="badge badge-secondary">New</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/AgregarCitas">Agregar Citas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/Modificar">Modificar Citas</a>
+                                        </li>
+                                       
+                                        
+                                    
+                                       
+                                    </ul>
+                                </div>
+                            </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-fw fa-chart-pie"></i>Precios</a>
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fas fa-cut"></i>Cortes</a>
+                                <div id="submenu-2" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/Cortes">Lista cortes <span class="badge badge-secondary">New</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/AgregarCorte">Agregar Cortes</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/ModificarCorte">Modificar Cortes</a>
+                                        </li>
+                                       
+                                        
+                                    
+                                       
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-dollar-sign"></i>Precios</a>
                                 <div id="submenu-3" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="chart-c3.html">Lista de precios</a>
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/Precios">Lista de precios</a>
                                         </li>
-                                
                                         <li class="nav-item">
-                                            <a class="nav-link" href="chart-chartist.html">Modificar Precios</a>
+                                            <a class="nav-link" href="<?php echo base_url(); ?>/ModificarPrecios">Modificar Precios</a>
                                         </li>
-                                        
-                                        
-                                       
-                                       
+               
                                     </ul>
                                 </div>
                             </li>
@@ -166,43 +162,85 @@ Administrador</h5>
             <div class="container-fluid dashboard-content">
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <h3 class="text-center">Agregar Clientes</h3>
-                    </div>
-                </div>
-                <div class="card-body border-top">
-                    <h3>Formulario para clientes</h3>
-                    <form action="/registrarcita">
-                        <div class="form-group">
-
-                            <label for="inputEmail">Telefono</label>
-                            <input id="inputEmail" type="tel" placeholder="Telefono" class="form-control">
-                            <label for="inputEmail">Nombre</label>
-                            <input id="inputEmail" type="text" placeholder="Nombre" class="form-control">
-                            <label for="inputEmail">Apellido paterno</label>
-                            <input id="inputEmail" type="text" placeholder="Apellido paterno" class="form-control">
-                            <label for="inputEmail">Apellido materno</label>
-                            <input id="inputEmail" type="text" placeholder="Apellido materno" class="form-control">
-
-                            <label for="inputEmail">Fecha</label>
-                            <input id="inputEmail" type="date" placeholder="Apellido materno" class="form-control">
-                            <br>
-
-                            <a  class="btn btn-primary">registrar cita</a>
-
-    
+                        <h3 class="text-center">Bienvenido!</h3>
+                    <div class="row">
+                        <!-- ============================================================== -->
+                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-inline-block">
+                                        <h5 class="text-muted">Clientes Registrados</h5>
+                                        <h2 class="mb-0">0</h2>
+                                    </div>
+                                    <div class="float-right icon-circle-medium  icon-box-lg  bg-primary-light mt-1">
+                                        <i class="fa fa-user fa-fw fa-sm text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!-- ============================================================== -->
+                        <!-- end total followers   -->
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-inline-block">
+                                        <h5 class="text-muted">Citas totales</h5>
+                                        <h2 class="mb-0">0</h2>
+                                    </div>
+                                    <div class="float-right icon-circle-medium  icon-box-lg  bg-secondary-light mt-1">
+                                        <i class="fas fa-calendar-alt fa-fw fa-sm text-secondary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-inline-block">
+                                        <h5 class="text-muted">Citas completadas</h5>
+                                        <h2 class="mb-0">0</h2>
+                                    </div>
+                                    <div class="float-right icon-circle-medium  icon-box-lg  bg-secondary-light mt-1">
+                                        <i class="fas fa-calendar-check fa-fw fa-sm text-secondary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-inline-block">
+                                        <h5 class="text-muted">Citas pendientes</h5>
+                                        <h2 class="mb-0">0</h2>
+                                    </div>
+                                    <div class="float-right icon-circle-medium  icon-box-lg  bg-secondary-light mt-1">
+                                        <i class="fas fa-clock fa-fw fa-sm text-secondary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end partnerships   -->
+                        <!-aqui va a ir algo pero no sé que puede ir--->
+                        </div>
+
+                    
+                </div>
+                
                         
 
                         
                                 
-<!-- -->
+
                             
                                 
             </div>
   
     <!-- ============================================================== -->
     <!-- end login page  -->
-    <!-- =============================================================
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+
 </body>
  
 </html>

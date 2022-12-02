@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Listado de clientes</title>
+    <title>Agregar clientes</title>
 </head>
 
 <body>
@@ -166,52 +166,74 @@ Administrador</h5>
                     <!-- ============================================================== -->
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="card">
-                            <h5 class="card-header">Lista de clientes</h5>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-striped table-bordered first">
-                                        <thead>
-                                            <tr>
-                                                <th>Telefono</th>
-                                                <th>Nombre</th>
-                                                <th>Apellido Paterno</th>
-                                                <th>Apellido Materno</th>
-                                                <th>Servicio</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>9992786530</td>
-                                                <td>Juan</td>
-                                                <td>Perez</td>
-                                                <td>Hernandez</td>
-                                                <td>Corte de bigote</td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <td>9993468374</td>
-                                                <td>Pedro</td>
-                                                <td>Avila</td>
-                                                <td>Gonzales</td>
-                                                <td>Corte militar</td>
-                                                
-                                            </tr>
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
+                            <h5 class="card-header">Agregar Clientes</h5>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                                
+                                <div class="card-body">
+                                    <form class="needs-validation" novalidate>
+                                        <div class="row">
 
-                                                <th>Telefono</th>
-                                                <th>Nombre</th>
-                                                <th>Apellido Paterno</th>
-                                                <th>Apellido Materno</th>
-                                                <th>Servicio</th>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                <label for="validationCustom01">Número de Celular</label>
+                                                <input type="number"  required="" data-parsley-minlength="10" class="form-control" id="validationCustom01" placeholder="Numero Celular"  required>
+                                                <div class="invalid-feedback">
+                                                    Ingrese este campo
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                <label for="validationCustom01">Primer nombre</label>
+                                                <input type="text" class="form-control" id="validationCustom01" placeholder="Primer nombre"  required>
+                                                <div class="invalid-feedback">
+                                                    Ingrese este campo
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                <label for="validationCustom02">Apellido</label>
+                                                <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido"  required>
+                                                <div class="invalid-feedback">
+                                                   Ingrese este campo
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                <label for="validationCustom02">Apellido Materno</label>
+                                                <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido materno"  required>
+                                                <div class="invalid-feedback">
+                                                   Ingrese este campo
+                                                </div>
+                                            </div>
+                                            
+                                           
+                                      
+
+                                           
+                                           
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div class="form-group">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                        <label class="form-check-label" for="invalidCheck">
+                                                            ¿Está de acuerdo en registrarse?
+                                                        </label>
+                                                        <div class="invalid-feedback">
+                                                            Necesita confirmar
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                                <button class="btn btn-primary" type="submit">Submit form</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
+
+                    
+
                     <!-- ============================================================== -->
                     <!-- end basic table  -->
                     <!-- ============================================================== -->
@@ -225,10 +247,35 @@ Administrador</h5>
                             
             
             </div>
-  
-    <!-- ============================================================== -->
-    <!-- end login page  -->
-    <!-- ============================================================== -->
+  <!-- Optional JavaScript -->
+  <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <script src="../assets/vendor/parsley/parsley.js"></script>
+    <script src="../assets/libs/js/main-js.js"></script>
+    <script>
+    $('#form').parsley();
+    </script>
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+    </script>
     
 </body>
  
