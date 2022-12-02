@@ -46,6 +46,11 @@ $routes->get('/', 'User::Loginadmin');
 $routes->get('/ListaClientes', 'User::ListaClientes');
 
 $routes->get('/principal', 'User::principal');
+
+$routes->get('/loginadmin', 'User::Loginadmin',['as' => 'user_login_get']);
+$routes->post('/loginadmin_post', 'User::Loginadmin_post',['as' => 'user_login_post']);
+$routes->post('/logoutadmin', 'User::Logoutadmin',['as' => 'user_logout']);
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
