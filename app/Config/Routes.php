@@ -47,6 +47,8 @@ $routes->get('/ListaClientes', 'User::ListaClientes');
 
 $routes->get('/principal', 'User::principal');
 $routes->get('/AgregarClientes', 'User::AgregarClientes');
+$routes->get('/Citas', 'User::Citas');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
