@@ -33,14 +33,14 @@
             <div class="card-body">
                 <form>
                     <div class="form-group">
-                        <input class="form-control form-control-lg" id="username" type="text" placeholder="Usuario" autocomplete="off">
+                        <input class="form-control form-control-lg"required="" id="username" type="text" placeholder="Usuario" autocomplete="off">
                     </div>
                     <div class="form-group">
-                        <input class="form-control form-control-lg" id="password" type="password" placeholder="contraseña">
+                        <input class="form-control form-control-lg"required="" id="password" type="password" placeholder="contraseña">
                     </div>
                     <div class="form-group">
                         <label class="custom-control custom-checkbox">
-                            <input class="custom-control-input" type="checkbox"><span class="custom-control-label">Recordar contraseña</span>
+                            <input class="custom-control-input" required=""type="checkbox"><span class="custom-control-label">Recordar contraseña</span>
                         </label>
                     </div>
                     <button type="submit" class="btn btn-primary btn-lg btn-block">Iniciar sesión</button>
