@@ -195,6 +195,7 @@ Administrador</h5>
                                                 <td>Avila</td>
                                                 <td>Gonzales</td>
                                                 <td>Corte militar</td>
+                                                <td>ewe</td>
                                                 
                                             </tr>
                                         </tbody>
