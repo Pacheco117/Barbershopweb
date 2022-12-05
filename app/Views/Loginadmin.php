@@ -29,7 +29,7 @@
     <!-- ============================================================== -->
     <div class="splash-container">
         <div class="card ">
-            <div class="card-header text-center"><a href="../index.html"><img class="logo-img" src="../assets/images/logo.png" alt="logo"></a><span class="splash-description">Porfavor ingrese sus datos.</span></div>
+            <div class="card-header text-center"><a href="../index.html"><img class="logo-img" src="../assets/images/logo.jpg"width="200" height="200" alt="logo"></a><span class="splash-description">Porfavor ingrese sus datos.</span></div>
             <div class="card-body">
                 <form>
                     <div class="form-group">
