@@ -46,8 +46,13 @@ $routes->get('/', 'User::Loginadmin');
 $routes->get('/ListaClientes', 'User::ListaClientes');
 
 $routes->get('/principal', 'User::principal');
-$routes->get('/AgregarClientes', 'User::AgregarClientes');
-$routes->get('/Citas', 'User::Citas');
+
+//muestra el apartado para agregar clientes
+$routes->get('/AgregarClientes', 'ClientesController::AgregarClientes');
+
+//apartado para las citas
+$routes->get('/Citas', 'Citas::Citas');
+$routes->get('/AgregarCitas', 'Citas::AgregarCitas');
 
 /*
  * --------------------------------------------------------------------
