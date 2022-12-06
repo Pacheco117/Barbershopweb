@@ -41,6 +41,11 @@ $routes->set404Override();
 //$routes->post('/actualizar', 'Home::update');
 //$routes->get('/editar', 'Home::edit');
 
+
+//Esta ruta es para el usuario o cliente
+//$routes->get('/', 'User::Barbershop');
+
+
 //esta ruta es del login principal
 $routes->get('/', 'User::Loginadmin');
 $routes->get('/ListaClientes', 'User::ListaClientes');

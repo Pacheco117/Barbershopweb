@@ -33,6 +33,11 @@ class User extends BaseController
     {
         $this->_loadDefaultView([],'Citas');
     }
+    public function Barbershop()
+    {
+        $this->_loadDefaultView([],'Barbershop');
+    }
+
     public function _loadDefaultView($data,$view)
     {
         echo view ("LoginTemplate");
