@@ -224,7 +224,7 @@ Administrador</h5>
                         <!-- ============================================================== -->
                         <!-- end partnerships   -->
                         <!-aqui va a ir algo pero no sé que puede ir--->
-                        </div>
+                        
 
                                                 <!-- total earned   -->
                         <!-- ============================================================== -->
@@ -232,7 +232,7 @@ Administrador</h5>
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-inline-block">
-                                        <h5 class="text-muted">Total del d{ia</h5>
+                                        <h5 class="text-muted">Total del dia</h5>
                                         <h2 class="mb-0"> $149.00</h2>
                                     </div>
                                     <div class="float-right icon-circle-medium  icon-box-lg  bg-brand-light mt-1">
