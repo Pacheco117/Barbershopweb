@@ -47,7 +47,7 @@ $routes->set404Override();
 
 
 //esta ruta es del login principal
-$routes->get('/', 'User::Loginadmin');
+$routes->get('/Login', 'User::Loginadmin');
 $routes->get('/ListaClientes', 'User::ListaClientes');
 
 $routes->get('/principal', 'User::principal');
@@ -58,7 +58,7 @@ $routes->get('/AgregarClientes', 'ClientesController::AgregarClientes');
 //apartado para las citas
 $routes->get('/Citas', 'Citas::Citas');
 $routes->get('/AgregarCitas', 'Citas::AgregarCitas');
-
+$routes->get('/', 'Citas::Clientescitas');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

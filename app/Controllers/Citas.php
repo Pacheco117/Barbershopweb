@@ -18,6 +18,10 @@ class Citas extends BaseController
     {
         $this->_loadDefaultView([],'AgregarCitas');
     }
+    public function Clientescitas()
+    {
+        $this->_loadDefaultView([],'clientescitas');
+    }
     
     public function _loadDefaultView($data,$view)
     {
