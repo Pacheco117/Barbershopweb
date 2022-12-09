@@ -168,8 +168,9 @@ Administrador</h5>
                      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="d-inline-block">
+                                    <div class="d-inline-block" >
                                         <h5 class="text-muted">Clientes Registrados</h5>
+                                       
                                         <h2 class="mb-0">0</h2>
                                     </div>
                                     <div class="float-right icon-circle-medium  icon-box-lg  bg-primary-light mt-1">
