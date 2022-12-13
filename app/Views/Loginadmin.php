@@ -29,9 +29,10 @@
     <!-- ============================================================== -->
     <div class="splash-container">
         <div class="card ">
-            <div class="card-header text-center"><a href="../index.html"><img class="logo-img" src="../assets/images/logo1.png"width="200" height="200" alt="logo"></a><span class="splash-description">Porfavor ingrese sus datos.</span></div>
+            <div class="card-header text-center"><img class="logo-img" src="../assets/images/logo1.png"width="200" height="200" alt="logo"><span class="splash-description">Porfavor ingrese sus datos.</span></div>
             <div class="card-body">
-                <form>
+                <!--el form action debe tener una accci{on} -->
+                <form method="post" action="?php echo site_url('login/verify'); ?>">
                     <div class="form-group">
                         <input class="form-control form-control-lg"required="" id="username" type="text" placeholder="Usuario" autocomplete="off">
                     </div>
