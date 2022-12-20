@@ -10,7 +10,7 @@
      protected $useAutoIncrement = true;
      protected $returnType     = 'array';
      protected $useSoftDeletes = false;
-     protected $allowedFields = ['id', 'nombre','apellido','cedula'];
+     protected $allowedFields = ['id', 'usuario','contraseña'];
      protected $useTimestamps = false;
      protected $createdField  = 'created_at';
      protected $updatedField  = 'updated_at';

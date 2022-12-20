@@ -49,8 +49,8 @@
                         <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/avatar-1.png" alt="" class="user-avatar-md rounded-circle"></a>
                         <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                             <div class="nav-user-info">
-                                <h5 class="mb-0 text-white nav-user-name">John Abraham</h5>
-                                <span class="status"></span><span class="ml-2">Available</span>
+                                <h5 class="mb-0 text-white nav-user-name">Administrador</h5>
+                                
                             </div>
                             <a class="dropdown-item" href="<?php echo base_url(); ?>/Login"><i class="fas fa-user mr-2"></i>Ingresar como administrador</a>
 
@@ -71,11 +71,11 @@
             </div>
             <div class="card-body">
                 
-                <div class="form-group pt-2">
-                    <button  class="btn btn-block btn-primary" type="submit"> <a href="<?php echo base_url(); ?>/Registrarsecliente" class="btn btn-primary">Registrese como cliente</a></button>
+                <div class="form-group pt-2" >
+                       <a href="<?php echo base_url(); ?>/Registrarcliente" class="btn btn-primary btn-block">Registrese como cliente</a>
                 </div>
                 <div class="form-group pt-2">
-                    <button class="btn btn-block btn-primary" type="submit"> <a href="<?php echo base_url(); ?>/Registrarcita" class="btn btn-primary">Agende su cita ahora mismo</a></button>
+                     <a href="<?php echo base_url(); ?>/Registrarcita" class="btn btn-primary btn-block">Agende su cita ahora mismo</a>
                 </div>
                 
             </div>

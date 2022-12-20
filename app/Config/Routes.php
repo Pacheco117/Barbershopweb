@@ -55,10 +55,16 @@ $routes->get('/principal', 'User::principal');
 //muestra el apartado para agregar clientes
 $routes->get('/AgregarClientes', 'ClientesController::AgregarClientes');
 
-//apartado para las citas
-$routes->get('/Citas', 'Citas::Citas');
-$routes->get('/AgregarCitas', 'Citas::AgregarCitas');
+//pagina principal
 $routes->get('/', 'Citas::Clientescitas');
+/*ewe
+*
+apartado de clientes 
+*/
+$routes->get('/Citas', 'Citas::Citas');
+$routes->get('/Registrarcliente', 'Citas::Registrarcliente');
+$routes->get('/AgregarCitas', 'Citas::AgregarCitas');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
