@@ -67,6 +67,10 @@ $routes->get('/Registrarcliente', 'Citas::Registrarcliente');
 $routes->get('/Registrarcita', 'Citas::Registrarcita');
 $routes->get('/AgregarCitas', 'Citas::AgregarCitas');
 
+$route['login'] = 'login';
+$route['login/verify'] = 'login/verify';
+
+
 //funcion de login
 
 /*
