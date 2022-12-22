@@ -63,6 +63,8 @@ apartado de clientes
 */
 $routes->get('/Citas', 'Citas::Citas');
 $routes->get('/Registrarcliente', 'Citas::Registrarcliente');
+//registrar citas
+$routes->get('/Registrarcita', 'Citas::Registrarcita');
 $routes->get('/AgregarCitas', 'Citas::AgregarCitas');
 
 /*

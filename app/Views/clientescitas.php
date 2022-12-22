@@ -66,8 +66,8 @@
     <form class="splash-container">
         <div class="card">
             <div class="card-header">
-                <h3 class="mb-1">Registre su cita</h3>
-                <p>Porfavor ingrese los siguientes datos</p>
+                <h3 class="mb-1">Bienvenido</h3>
+                <p>Porfavor Registrese en el sistema</p>
             </div>
             <div class="card-body">
                 

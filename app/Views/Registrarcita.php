@@ -84,26 +84,27 @@
                                             </div>
 
                                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                                                <label for="validationCustom01">Primer nombre</label>
-                                                <input type="text" class="form-control" id="validationCustom01" placeholder="Primer nombre"  required>
+
+
+                                                <label for="input-select">Selecione su corte</label>
+                                                <select class="form-control" id="input-select">
+                                                    <option>Corte militar</option>
+                                                    <option>Corte de cejas</option>
+                                                </select>
                                                 <div class="invalid-feedback">
                                                     Ingrese este campo
                                                 </div>
                                             </div>
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                                                <label for="validationCustom02">Apellido</label>
-                                                <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido"  required>
-                                                <div class="invalid-feedback">
-                                                   Ingrese este campo
-                                                </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                            <div class="input-group date" id="datetimepicker6" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker6" />
+                                            <div class="input-group-append" data-target="#datetimepicker6" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
                                             </div>
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
-                                                <label for="validationCustom02">Apellido Materno</label>
-                                                <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido materno"  required>
-                                                <div class="invalid-feedback">
-                                                   Ingrese este campo
-                                                </div>
-                                            </div>
+                                        </div>
+                                        </div>
+                                           
+                                           
                                             
                                            
                                       
@@ -115,7 +116,7 @@
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                                                         <label class="form-check-label" for="invalidCheck">
-                                                            ¿Está de acuerdo en registrarse?
+                                                            ¿Está seguro que quiere realizar una cita?
                                                         </label>
                                                         <div class="invalid-feedback">
                                                             Necesita confirmar
@@ -159,6 +160,11 @@
         }, false);
     })();
     </script>   
+        <script src="../assets/libs/js/main-js.js"></script>
+    <script src="../assets/vendor/inputmask/js/jquery.inputmask.bundle.js"></script>
+    <script src="../assets/vendor/datepicker/moment.js"></script>
+    <script src="../assets/vendor/datepicker/tempusdominus-bootstrap-4.js"></script>
+    <script src="../assets/vendor/datepicker/datepicker.js"></script>
 </body>
 
  

@@ -26,6 +26,10 @@ class Citas extends BaseController
     {
         $this->_loadDefaultView([],'Registrarcliente');
     }
+    public function Registrarcita()
+    {
+        $this->_loadDefaultView([], 'Registrarcita');
+    }
     
     public function _loadDefaultView($data,$view)
     {
