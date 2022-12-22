@@ -47,7 +47,7 @@ $routes->set404Override();
 
 
 //esta ruta es del login principal
-$routes->get('/Login', 'User::Loginadmin');
+$routes->get('/', 'User::Loginadmin');
 $routes->get('/ListaClientes', 'User::ListaClientes');
 
 $routes->get('/principal', 'User::principal');
@@ -56,7 +56,7 @@ $routes->get('/principal', 'User::principal');
 $routes->get('/AgregarClientes', 'ClientesController::AgregarClientes');
 
 //pagina principal
-$routes->get('/', 'Citas::Clientescitas');
+$routes->get('/citas', 'Citas::Clientescitas');
 /*ewe
 *
 apartado de clientes 
@@ -66,6 +66,8 @@ $routes->get('/Registrarcliente', 'Citas::Registrarcliente');
 //registrar citas
 $routes->get('/Registrarcita', 'Citas::Registrarcita');
 $routes->get('/AgregarCitas', 'Citas::AgregarCitas');
+
+//funcion de login
 
 /*
  * --------------------------------------------------------------------

@@ -52,7 +52,7 @@
                                 <h5 class="mb-0 text-white nav-user-name">Administrador</h5>
                                 
                             </div>
-                            <a class="dropdown-item" href="<?php echo base_url(); ?>/Login"><i class="fas fa-user mr-2"></i>Ingresar como administrador</a>
+                            <a class="dropdown-item" href="<?php echo base_url(); ?>/"><i class="fas fa-user mr-2"></i>Ingresar como administrador</a>
 
                         </div>
                     </li>

@@ -32,12 +32,12 @@
             <div class="card-header text-center"><img class="logo-img" src="../assets/images/logo1.png"width="200" height="200" alt="logo"><span class="splash-description">Porfavor ingrese sus datos.</span></div>
             <div class="card-body">
                 <!--el form action debe tener una accci{on} -->
-                <form method="post" action="?php echo site_url('login/verify'); ?>">
+                <form method="post" action="?php echo site_url('login/login_user'); ?>">
                     <div class="form-group">
-                        <input class="form-control form-control-lg"required="" id="username" type="text" placeholder="Usuario" autocomplete="off">
+                        <input class="form-control form-control-lg"required="" name="username"id="username" type="text" placeholder="Usuario" autocomplete="off">
                     </div>
                     <div class="form-group">
-                        <input class="form-control form-control-lg"required="" id="password" type="password" placeholder="contraseña">
+                        <input class="form-control form-control-lg"required=""name="password"   id="password" type="password" placeholder="contraseña">
                     </div>
                     <div class="form-group">
                         <label class="custom-control custom-checkbox">
